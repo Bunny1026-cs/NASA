@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOBE Hydrosphere Protocols</title>
+    <link rel="stylesheet" href="level3.css">
+</head>
+<body>
+    <!-- Opening message -->
+    <div id="opening-message" class="center-screen">
+        <h1>Let's see in GLOBE Hydrosphere Investigation Protocols</h1>
+    </div>
+
+    <!-- Notepad -->
+    <div id="notepad" class="hidden">
+        <h2><b>GLOBE Hydrosphere Investigation Protocols</b></h2>
+        <ul>
+            <li id="ph-test-option"><b>pH Test</b></li>
+            <li>Water Temperature</li>
+            <li>Electrical Conductivity</li>
+            <li>Dissolved Oxygen</li>
+        </ul>
+    </div>
+
+    <!-- pH Test Section -->
+    <div id="ph-test-section" class="hidden">
+        <h2>pH Test</h2>
+        <button id="start-ph-test">Start Test</button>
+        <div class="test-area">
+            <img src="ph_meter1.png" alt="pH Meter" id="ph-meter" class="hidden">
+            <img src="beaker.png" alt="Beaker" id="beaker">
+        </div>
+        <div id="ph-result" class="hidden"></div>
+    </div>
+
+    <script src="level3.js"></script>
+</body>
+</html>

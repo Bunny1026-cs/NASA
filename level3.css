@@ -1,0 +1,112 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87cefa;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Notepad styling */
+#notepad {
+    background-color: #fff8dc;
+    border: 2px solid #deb887;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+ul li:hover {
+    background-color: #f0e68c;
+    cursor: pointer;
+}
+
+/* pH Test Section styling */
+.test-area {
+    margin-top: 20px;
+    position: relative;
+}
+
+#ph-meter, #beaker {
+    width: 100px;
+    height: auto;
+    display: inline-block;
+}
+#ph-meter, #beaker {
+    width: 100px;
+    height: auto;
+    display: inline-block;
+}
+
+#ph-meter {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    transition: transform 1s ease;
+}
+
+#ph-result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #48d1cc;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #20b2aa;
+}
+#ph-meter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px; /* Adjust this based on your layout */
+    transition: transform 0.5s; /* Smooth transition */
+    display: none; /* Initially hidden */
+    height : auto;
+    width : 200px;
+}
+
+#beaker {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 250px; /* Adjust this based on your layout */
+    width: 250px;
+    height: auto;
+
+}
+
+

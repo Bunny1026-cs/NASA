@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#lets-go-btn {
+    display: block;
+    margin: 20px auto; /* Center the button */
+    padding: 10px 20px; /* Increase padding for a bigger button */
+    font-size: 20px; /* Larger font size */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+#lets-go-btn:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+/* Animation for cloud leaving */
+@keyframes cloudLeave {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-100%); }
+}
+.option-button {
+    display: inline-block; /* Align buttons side by side */
+    padding: 15px 25px; /* Increase padding */
+    margin: 10px; /* Spacing between buttons */
+    font-size: 18px; /* Larger font size */
+    background-color: #2196F3; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.option-button:hover {
+    background-color: #0b7dda; /* Darker blue on hover */
+}
+.quiz-container {
+    padding: 20px;
+    background-color: #f0f8ff; /* Light background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center; /* Center text */
+}
+

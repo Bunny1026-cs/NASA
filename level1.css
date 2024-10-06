@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.quiz-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+}
+h2 {
+    margin-bottom: 20px;
+}
+.image-options {
+    display: flex;
+    justify-content: space-between;
+}
+.image-options img {
+    width: 40%; /* Adjust this to make the images responsive */
+    height: auto; /* Maintain the aspect ratio */
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.image-options img:hover {
+    transform: scale(1.05);
+}
+#feedback {
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: #ff1744;
+}
+#next-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00e676;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+#next-btn:hover {
+    background-color: #00c853;
+}
+#next-level-btn {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    padding: 15px 30px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    animation: float 3s infinite ease-in-out; /* Animation for floating */
+    z-index: 1000;
+}
+#next-level-btn:hover {
+    background-color: #f50057;
+}
+@keyframes float {
+    0%, 100% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-10px); /* Float up */
+    }
+}
+/* Existing styles... */
+/* Badge Styles */
+/* Badge styling */
+/* Badge Styles */
+#badge {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    display: none; /* Hidden by default */
+    animation: badgeEntry 2s ease forwards; /* Run the animation once on display */
+}
+/* Badge Image Styles */
+.badge-image {
+    width: 50px;
+    height: 50px;
+    animation: rotateAndScale 1.5s ease forwards; /* Run rotation and scaling once */
+}
+/* One-time rotate and enlarge animation */
+@keyframes rotateAndScale {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(1.2); /* Rotate and enlarge */
+    }
+    100% {
+        transform: rotate(360deg) scale(1); /* Back to normal size */
+    }
+}
+/* Fade-in and slight movement for badge */
+@keyframes badgeEntry {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+/* Title and text inside badge */
+.badge-content h3 {
+    margin: 0;
+    color: #4caf50;
+}
+.badge-content p {
+    margin: 0;
+}
