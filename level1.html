@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quiz Game</title>
+    <link rel="stylesheet" href="level1.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2 id="question">Which looks like water?</h2>
+        <p id="score">Score: 0</p>
+        <div class="image-options">
+            <img src="html/pond.jpeg" id="image1" class="option" alt="Option 1">
+            <img src="html/pollutedpond.jpg" id="image2" class="option" alt="Option 2">
+        </div>
+        <p id="feedback"></p>
+        <button id="next-btn" style="display:none;">Next Question</button>
+        
+        <button id="next-level-btn" style="display:none;">Play Next Level</button>
+        <div id="badge" style="display:none;">
+            <img src="eagle-eye-badge.png" alt="Eagle Eye Badge" class="badge-image">
+            <div class="badge-content">
+                <h3>Eagle Eye</h3>
+                <p>Congratulations! You are a wonderful observant!</p>
+            </div>
+        </div>
+    </div>
+    <script src="level1.js"></script>
+</body>
+</html>
