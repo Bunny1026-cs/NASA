@@ -96,13 +96,8 @@ function showBadge() {
     badge.classList.add("celebration"); // Add celebration effect
 }
 nextLevelBtn.addEventListener("click", () => {
-    // Reset the quiz for the next level
-    currentQuestion = 0;
-    score = 0; // Reset score
-    answeredQuestions.clear();
-    scoreDisplay.textContent = `Score: ${score}`; // Reset score display
-    nextLevelBtn.style.display = "none"; // Hide the next level button
-    loadQuestion(); // Load the first question of the new level
+    // Redirect to the next level or reset the quiz
+    window.location.href = "level2.html"; // Change this to your next level page
 });
 // Event listener for the badge click
 badge.addEventListener("click", () => {
